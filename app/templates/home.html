@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
+
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+
+      <div class="bg-red-600">
+        background is red
+    </div>
+
 <p>screen size: {{ screen_size[0]}}, {{screen_size[1] }}</p>
 <p>current position: <span id="mousePosition"></span></p>
 
@@ -13,7 +23,7 @@
 
 <script
     type="text/javascript"
-    src="{{ url_for('static', filename='index.js') }}">
+    src="{{ url_for('static', filename='js/index.js') }}">
 </script>
 </body>
 </html>

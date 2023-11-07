@@ -3,6 +3,8 @@ import json
 import pyautogui as pg
 from flask import Blueprint, render_template, request, jsonify
 
+from app.helpers import cursor_movement
+
 views = Blueprint('views', __name__)
 
 
@@ -24,7 +26,7 @@ def move_cursor():
                 pg.FAILSAFE_POINTS.append((x, y))
                 pg.moveTo(x, y)
 
-            pg.move(0, 5)
+            cursor_movement()
 
         except pg.FailSafeException:
             return jsonify({})

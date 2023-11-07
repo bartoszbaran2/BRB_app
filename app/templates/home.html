@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<p>screen size: {{ screen_size[0]}}, {{screen_size[1] }}</p>
+<p>current position: <span id="mousePosition"></span></p>
+
+<button type="button" id="cursorButton" onclick="toggleCursorButton()">Start</button>
+<!--<button type="button" onclick="">Stop</button>-->
+
+<script
+    type="text/javascript"
+    src="{{ url_for('static', filename='index.js') }}">
+</script>
+</body>
+</html>

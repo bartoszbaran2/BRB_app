@@ -11,6 +11,7 @@ packages = [{include = "brb_app"}]
 python = "^3.10"
 flask = "3.0.0"
 pyautogui = "^0.9.54"
+coverage = "7.3.2"
 
 
 

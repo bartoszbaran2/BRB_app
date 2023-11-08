@@ -3,14 +3,21 @@
 {% block title %}BRB APP{% endblock %}
 
 {% block content %}
+<div>
+    <div class="flex items-center justify-center h-screen">
+        <button type="button"
+                id="cursorButton"
+                onclick="toggleCursorButton()"
+                class="px-10 py-4 text-xl font-semibold text-center text-white transition duration-300 rounded-lg
+                        hover:from-purple-600 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500
+                        md:w-auto flex items-center space-x-4">
 
-      <div class="bg-red-600">
-        background is red
+                <span class="text-4xl">BRB</span>
+                <span><img src="static/images/coffe_cup.png" alt="coffe_cup" class="inline-flex"></span>
+
+
+        </button>
     </div>
 
-<p>screen size: {{ screen_size[0]}}, {{screen_size[1] }}</p>
-<p>current position: <span id="mousePosition"></span></p>
-
-<button type="button" id="cursorButton" onclick="toggleCursorButton()">BRB!</button>
-
+</div>
 {% endblock %}

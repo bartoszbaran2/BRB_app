@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
-    <title>Home</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+{% block title %}BRB APP{% endblock %}
+
+{% block content %}
 
       <div class="bg-red-600">
         background is red
@@ -18,12 +11,6 @@
 <p>screen size: {{ screen_size[0]}}, {{screen_size[1] }}</p>
 <p>current position: <span id="mousePosition"></span></p>
 
-<button type="button" id="cursorButton" onclick="toggleCursorButton()">Start</button>
-<!--<button type="button" onclick="">Stop</button>-->
+<button type="button" id="cursorButton" onclick="toggleCursorButton()">BRB!</button>
 
-<script
-    type="text/javascript"
-    src="{{ url_for('static', filename='js/index.js') }}">
-</script>
-</body>
-</html>
+{% endblock %}

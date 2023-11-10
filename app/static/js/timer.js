@@ -1,5 +1,3 @@
-var cursorTimer
-
 function cursorDeactivationTimer(toggle) {
     if (toggle){
         var timeInput = document.getElementById('customTime')

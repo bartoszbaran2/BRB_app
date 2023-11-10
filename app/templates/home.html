@@ -1,17 +1,10 @@
 {% extends 'base.html' %}
-
 {% block title %}BRB APP{% endblock %}
-
 {% block content %}
-<div>
-    <div>
-        <label for="customTime">Stop at: </label>
-        <input type="time" id="customTime">
-        <input type="checkbox" id="timerCheckbox" onchange="handleCheckbox()">
-<!--        <button onclick="cursorDeactivationTimer()">Stop at Time</button>-->
-    </div>
 
-    <div class="flex items-center justify-center h-screen">
+
+<div class="grid grid-cols-1 gap-20 content-center flex flex-row min-h-screen justify-center items-center">
+    <div class="flex items-center justify-center">
         <button type="button"
                 id="cursorButton"
                 onclick="toggleCursorButton()"
@@ -23,8 +16,25 @@
                 <span><img src="static/images/coffe_cup.png" alt="coffe_cup" class="inline-flex"></span>
         </button>
     </div>
+    <div class="flex items-center justify-center flex space-x-4 text-2xl font-extrabold">
+        <div class="flex items-center justify-center flex space-x-4">
+            <label class="text-white">Stop At: </label>
+            <div class=" rounded-full">
+                <input type="time" id="customTime" class="bg-transparent" style="filter: invert(100%)">
+            </div>
+        </div>
 
-
-
+        <div class="flex">
+            <label class="relative inline-flex items-center me-5 cursor-pointer">
+              <input type="checkbox" value="" class="sr-only peer">
+              <div class="w-14 h-7 bg-gray-200 rounded-full peer dark:bg-pink-600 peer-focus:ring-4 peer-focus:ring-teal-300
+               dark:peer-focus:ring-teal-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full
+                peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px]
+                 after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6
+                  after:transition-all dark:border-gray-600 peer-checked:bg-teal-400"></div>
+            </label>
+        </div>
+    </div>
 </div>
+
 {% endblock %}

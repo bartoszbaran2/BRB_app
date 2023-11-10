@@ -4,6 +4,13 @@
 
 {% block content %}
 <div>
+    <div>
+        <label for="customTime">Stop at: </label>
+        <input type="time" id="customTime">
+        <input type="checkbox" id="timerCheckbox" onchange="handleCheckbox()">
+<!--        <button onclick="cursorDeactivationTimer()">Stop at Time</button>-->
+    </div>
+
     <div class="flex items-center justify-center h-screen">
         <button type="button"
                 id="cursorButton"
@@ -12,12 +19,12 @@
                         hover:from-purple-600 hover:to-pink-600 ease bg-gradient-to-br from-purple-500 to-pink-500
                         md:w-auto flex items-center space-x-4">
 
-                <span class="text-4xl">BRB</span>
+                <span class="text-4xl">I'll Be Right Back</span>
                 <span><img src="static/images/coffe_cup.png" alt="coffe_cup" class="inline-flex"></span>
-
-
         </button>
     </div>
+
+
 
 </div>
 {% endblock %}

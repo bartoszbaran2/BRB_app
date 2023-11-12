@@ -15,7 +15,6 @@ function toggleCursorButton() {
 
     if (cursorActive) {
         button.innerHTML = 'Stop (or press Space)';
-        button.classList.add
     }
     activateCursor(cursorActive)
 }

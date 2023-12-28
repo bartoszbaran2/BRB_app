@@ -5,7 +5,7 @@ BRB is web application to maintain active status in office communicators.
 Allows you to avoid security features installed on a business computer by the admin.
 
 ## DEMO
-xxx
+heroku
 
 ## Tech Stack
 Python, Flask, JavaScript, Tailwind, HTML
@@ -13,25 +13,25 @@ Python, Flask, JavaScript, Tailwind, HTML
 ## Run Locally
 Clone the project
 ```bash
-  git clone https://github.com/bartoszbaran2/BRB_app.git
+git clone https://github.com/bartoszbaran2/BRB_app.git
 ```
-
 Go to the project directory
 ```bash
-  cd brb_app
+cd brb_app
 ```
 Set envioronment variables
 ```bash
-  
+export FLASK_APP=main.py
 ```
-## Environment Variables
-xxx
+Run app
+```bash
+flask run
+```
 
 ## Running Tests
-xx
-
-## Coverage report
-xx
+```bash
+flask test --coverage
+```
 
 ## Author
 - [@bartoszbaran2](https://github.com/bartoszbaran2)

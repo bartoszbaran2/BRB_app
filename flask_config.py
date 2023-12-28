@@ -46,13 +46,9 @@ class ProductionConfig(Config):
         app.logger.addHandler(mail_handler)
 
 
-
-
-
-
-
 config = {
     'development': DevelopmentConfig,
     'testing': TestingConfig,
-    'default': DevelopmentConfig
+    'default': DevelopmentConfig,
+    'production': ProductionConfig,
 }

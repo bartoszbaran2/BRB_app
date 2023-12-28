@@ -8,6 +8,8 @@ function cursorDeactivationTimer(toggle) {
 
         var timeDifference = (selectedHour * 60 + selectedMinute) - (currentHour * 60 + currentMinute)
 
+        console.log(timeDifference)
+
         cursorTimer = setTimeout(() => activateCursor(false), timeDifference * 60 * 1000)
     } else {
         clearTimeout(cursorTimer)

@@ -5,7 +5,7 @@ BRB is web application to maintain active status in office communicators.
 Allows you to avoid security features installed on a business computer by the admin.
 
 ## DEMO
-heroku
+![app sample](https://github.com/bartoszbaran2/BRB_app/blob/BRB-006_readme/readme_media/brb-sample.gif?raw=true)
 
 ## Tech Stack
 Python, Flask, JavaScript, Tailwind, HTML
